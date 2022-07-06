@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import "bootstrap/dist/css/bootstrap.min.css";
 import MovieList from "./components/MovieList";
 import "./App.css"
+import { useEffect } from "react";
 
 
 function App() {
@@ -45,6 +46,10 @@ function App() {
     console.log(responseJson);
   }
 
+
+  useEffect(() => {
+    getMovieRequest();
+  }, []);
 
   return (
   <div className="container-fluid movie-app">
