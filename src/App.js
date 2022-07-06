@@ -32,8 +32,12 @@ function App() {
       "Poster": "https://m.media-amazon.com/images/M/MV5BOTAzODEzNDAzMl5BMl5BanBnXkFtZTgwMDU1MTgzNzE@._V1_SX300.jpg"
   },
   ]);
+
+
   return (
-  <div>Hello!</div>
+  <div>
+    
+  </div>
   );
 }
 
