@@ -37,7 +37,7 @@ function App() {
 
   return (
   <div>
-    <MovieList />
+    <MovieList movies={movies}  />
   </div>
   );
 }
