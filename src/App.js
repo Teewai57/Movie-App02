@@ -1,6 +1,8 @@
 import React, { useState } from "react"
 import "bootstrap/dist/css/bootstrap.min.css";
 import MovieList from "./components/MovieList";
+import "./App.css"
+
 
 function App() {
   const [movies, setMovies] = useState([
@@ -36,8 +38,10 @@ function App() {
 
 
   return (
-  <div>
+  <div className="container-fluid">
+    <div className="row">
     <MovieList movies={movies}  />
+    </div>
   </div>
   );
 }
