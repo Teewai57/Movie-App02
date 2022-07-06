@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import MovieList from "./components/MovieList";
 
 
 function App() {
@@ -36,7 +37,7 @@ function App() {
 
   return (
   <div>
-    
+    <MovieList />
   </div>
   );
 }
