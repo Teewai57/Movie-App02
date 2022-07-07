@@ -23,8 +23,6 @@ function App() {
     if(responseJson.Search) {
       setMovies(responseJson.Search)
     }
-
-    setMovies(responseJson.Search);
 };
 
 
@@ -50,6 +48,14 @@ function App() {
       favoritesComponent={AddFavorite} 
     />
     </div>
+    <div className="row d-flex align-items-center mt-4 mb-4">
+    <MovieListHeading heading="Favorites"/>
+    </div>
+    <MovieList 
+      movies={Favorites} 
+      handleFavoritesClick={AddFavoriteMovie} 
+      favoritesComponent={AddFavorite} 
+    />
   </div>
   );
 }
