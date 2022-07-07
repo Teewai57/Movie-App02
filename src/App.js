@@ -36,7 +36,11 @@ function App() {
     setFavorites(newFavoriteList);
   }
 
-  
+  const RemoveFavoriteMovie = (movie) => {
+    const newFavoriteList = Favorites.filter((favorite) => favorite.imdbID !== movie.imdbID);
+
+    setFavorites(newFavoriteList);
+  }
 
   return (
   <div className="container-fluid movie-app">
@@ -56,7 +60,7 @@ function App() {
     </div>
     <MovieList 
       movies={Favorites} 
-      handleFavoritesClick={AddFavoriteMovie} 
+      handleFavoritesClick={RemoveFavoriteMovie} 
       favoritesComponent={RemoveFavorites} 
     />
   </div>
