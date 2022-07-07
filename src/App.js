@@ -65,21 +65,30 @@ function App() {
     <MovieListHeading heading="Movies"/>
     <SearchBox searchValue={searchValue} setSearchValue={setSearchValue}/>
     </div>
+
+
     <div className="row">
-    <MovieList 
+      <MovieList 
       movies={movies} 
       handleFavoritesClick={addFavoriteMovie} 
       favoritesComponent={AddFavorite} 
     />
     </div>
+
+
+    
     <div className="row d-flex align-items-center mt-4 mb-4">
     <MovieListHeading heading="Favorites"/>
     </div>
+
+    <div className="row">
     <MovieList 
       movies={Favorites} 
       handleFavoritesClick={removeFavoriteMovie} 
       favoritesComponent={RemoveFavorites} 
     />
+    
+    </div>
   </div>
   );
 }
