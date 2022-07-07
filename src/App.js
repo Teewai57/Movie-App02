@@ -4,6 +4,7 @@ import MovieList from "./components/MovieList";
 import "./App.css"
 import { useEffect } from "react";
 import MovieListHeading from "./components/MovieListHeading"
+import SearchBox from "./components/SearchBox";
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
   <div className="container-fluid movie-app">
     <div className="row">
     <MovieListHeading heading="Movies"/>
+    <SearchBox />
     </div>
     <div className="row">
     <MovieList movies={movies}  />
