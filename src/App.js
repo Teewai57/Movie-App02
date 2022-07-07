@@ -27,7 +27,7 @@ function App() {
   return (
   <div className="container-fluid movie-app">
     <div className="row">
-    <MovieListHeading />
+    <MovieListHeading heading="Movies"/>
     </div>
     <div className="row">
     <MovieList movies={movies}  />
