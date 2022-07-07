@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import MovieListHeading from "./components/MovieListHeading"
 import SearchBox from "./components/SearchBox";
 import AddFavorite from "./components/AddFavorites";
+import RemoveFavorites from "./components/RemoveFavorites";
 
 
 function App() {
@@ -35,6 +36,8 @@ function App() {
     setFavorites(newFavoriteList);
   }
 
+  
+
   return (
   <div className="container-fluid movie-app">
     <div className="row d-flex align-items-center mt-4 mb-4">
@@ -54,7 +57,7 @@ function App() {
     <MovieList 
       movies={Favorites} 
       handleFavoritesClick={AddFavoriteMovie} 
-      favoritesComponent={AddFavorite} 
+      favoritesComponent={RemoveFavorites} 
     />
   </div>
   );
