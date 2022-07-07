@@ -5,6 +5,7 @@ import "./App.css"
 import { useEffect } from "react";
 import MovieListHeading from "./components/MovieListHeading"
 import SearchBox from "./components/SearchBox";
+import AddFavorite from "./components/AddFavorites";
 
 
 function App() {
@@ -36,7 +37,7 @@ function App() {
     <SearchBox searchValue={searchValue} setSearchValue={setSearchValue}/>
     </div>
     <div className="row">
-    <MovieList movies={movies}  />
+    <MovieList movies={movies} favoritesComponent={AddFavorite} />
     </div>
   </div>
   );
