@@ -10,13 +10,14 @@ body{
 
 .image-container{
   position: relative;
-  transition: transform 0.2s;
-  height: 300px;
+  transition: transform 1s;
+  height: 550px;
+  width: 100%;
 }
 
 .image-container:hover{
  cursor: pointer;
- transform: scale(1.1);
+ transform: scale(1.05);
 }
 
 .image-container:hover .overlay{
