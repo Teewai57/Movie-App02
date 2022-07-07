@@ -6,17 +6,20 @@ const MovieList = (props) => {
     return(
         <>
          {props.movies.map((movie, index) => 
-         <div className="col-md-3 image-container d-flex justify-content-start m-3">
+         <div className="col-md-3">
+           <div className="image-container d-flex justify-content-start m-3">
             <img src={movie.Poster} alt="movie"></img>
+
             <div 
                 onClick={() => props.handleFavoritesClick(movie) }
                 className="overlay d-flex align-items-center justify-content-center">
                 <FavoritesComponent />
             </div>
+            </div>
          </div>
          )}
         </>
     )
-}
+};
 
 export default MovieList
